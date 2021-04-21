@@ -6,7 +6,7 @@ import {
   Jost_600SemiBold
    } from '@expo-google-fonts/jost';
 
-import Confirmation from "./src/pages/Confirmation";
+import Routes from "./src/routes"
 
 const App: React.FC = () => {
 
@@ -18,7 +18,7 @@ if(!fontsLoaded) {
   return <AppLoading />
 }
 
-  return <Confirmation />
+  return <Routes />
 }
 
 export default App;
