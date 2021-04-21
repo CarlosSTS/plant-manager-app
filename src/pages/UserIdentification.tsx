@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/core';
 
 import {
+  TouchableWithoutFeedback,
   Text,
   StyleSheet,
   SafeAreaView,
   View,
   TextInput,
   KeyboardAvoidingView,
-  Platform
+  Platform,
+  Keyboard
 } from 'react-native';
 import Button from "../components/Button"
 
@@ -40,6 +42,8 @@ function handleInputChange(value: string) {
         style={styles.container}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+
         <View style={styles.content}>
           <View style={styles.form}>
             <View style={styles.header}>
@@ -71,6 +75,8 @@ function handleInputChange(value: string) {
             </View>
           </View>
         </View>
+        </TouchableWithoutFeedback>
+
       </KeyboardAvoidingView>
     </SafeAreaView>
   )
