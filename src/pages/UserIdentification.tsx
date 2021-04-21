@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigation } from '@react-navigation/core';
+
 import {
   Text,
   StyleSheet,
@@ -15,6 +17,7 @@ import fonts from '../../styles/fonts';
 
 
 const UserIdentication: React.FC = () => {
+  const {navigate} = useNavigation()
   const [name , setName] = useState("")
 const [isFocused, setIsFocused] = useState(false)
 const [isFilled, setIsFilled] = useState(false)
@@ -60,7 +63,10 @@ function handleInputChange(value: string) {
             />
 
             <View style={styles.footer}>
-              <Button />
+              <Button 
+              title="Confirmar"
+              onPress={() => navigate('Confirmation')} 
+              />
 
             </View>
           </View>

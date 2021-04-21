@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/core';
 import { Feather } from "@expo/vector-icons"
 import {
   Text,
@@ -16,6 +17,8 @@ import fonts from '../../styles/fonts';
 import wateringImg from "../assets/watering.png"
 
 const Welcome: React.FC = () => {
+  const { navigate } = useNavigation();
+
   return (
 
     <SafeAreaView style={styles.container}>
@@ -34,6 +37,7 @@ const Welcome: React.FC = () => {
 
 
         <TouchableOpacity
+          onPress={() => navigate('UserIdentication')}
           style={styles.button}
           activeOpacity={0.7}
         >

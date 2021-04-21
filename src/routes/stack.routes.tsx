@@ -1,5 +1,5 @@
 import React from "react"
-import { createStackNavigator} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 
 import colors from "../../styles/colors";
 
@@ -10,28 +10,28 @@ import Confirmation from "../pages/Confirmation";
 const StackRoutes = createStackNavigator()
 
 const AppRoutes: React.FC = () => (
-  <StackRoutes.Navigator 
-  headerMode="none"
-  screenOptions={{
-    cardStyle : {
-      backgroundColor: colors.white
-    },
-  }}
+  <StackRoutes.Navigator
+    headerMode="none"
+    screenOptions={{
+      cardStyle: {
+        backgroundColor: colors.white
+      },
+    }}
   >
-<StackRoutes.Screen
-name="Welcome"
-component={Welcome} 
-/>
+    <StackRoutes.Screen
+      name="Welcome"
+      component={Welcome}
+    />
 
-<StackRoutes.Screen
-name="User"
-component={UserIdentication} 
-/>
+    <StackRoutes.Screen
+      name="UserIdentication"
+      component={UserIdentication}
+    />
 
-<StackRoutes.Screen
-name="Confirmation"
-component={Confirmation} 
-/>
+    <StackRoutes.Screen
+      name="Confirmation"
+      component={Confirmation}
+    />
 
   </StackRoutes.Navigator>
 )

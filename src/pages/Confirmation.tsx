@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/core';
+
 import { SafeAreaView, StyleSheet, View, Text } from 'react-native';
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
@@ -6,6 +8,7 @@ import fonts from '../../styles/fonts';
 import Button from "../components/Button"
 
 const Confirmation: React.FC = () => {
+  const { navigate } = useNavigation()
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
@@ -23,7 +26,10 @@ const Confirmation: React.FC = () => {
           </Text>
 
         <View style={styles.footer}>
-          <Button />
+          <Button
+            title="Começar"
+            onPress={() => navigate('Confirmation')}
+          />
         </View>
       </View>
     </SafeAreaView >
