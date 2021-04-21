@@ -28,7 +28,7 @@ const Confirmation: React.FC = () => {
         <View style={styles.footer}>
           <Button
             title="Começar"
-            onPress={() => navigate('Confirmation')}
+            onPress={() => navigate('PlantSelect')}
           />
         </View>
       </View>
