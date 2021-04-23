@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-
+import AsyncStorage from "@react-native-async-storage/async-storage"
 import {
   TouchableWithoutFeedback,
   Text,
@@ -20,29 +20,32 @@ import fonts from '../../styles/fonts';
 
 
 const UserIdentication: React.FC = () => {
-  const {navigate} = useNavigation()
-  const [name , setName] = useState("")
-const [isFocused, setIsFocused] = useState(false)
-const [isFilled, setIsFilled] = useState(false)
+  const { navigate } = useNavigation()
+  const [name, setName] = useState("")
+  const [isFocused, setIsFocused] = useState(false)
+  const [isFilled, setIsFilled] = useState(false)
 
-function handleInputBlur() {
-  setIsFocused(false)
-  setIsFilled(!!name)
-}
-function handleInputFocus() {
-  setIsFocused(true)
-}
-function handleInputChange(value: string) {
-  setIsFilled(!!value)
-  setName(value)
-}
-
-function navigateToConfimation() {
-  if(!name) {
-    return Alert.alert("Aviso", 'Me diz como chamar você 🥲')
+  function handleInputBlur() {
+    setIsFocused(false)
+    setIsFilled(!!name)
   }
-navigate("Confirmation")
-}
+  function handleInputFocus() {
+    setIsFocused(true)
+  }
+  function handleInputChange(value: string) {
+    setIsFilled(!!value)
+    setName(value)
+  }
+
+  async function navigateToConfimation() {
+    if (!name) {
+      return Alert.alert("Aviso", 'Me diz como chamar você 🥲')
+    }
+
+    await AsyncStorage.setItem("@plantmanager:user", name);
+
+    navigate("Confirmation")
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -52,37 +55,37 @@ navigate("Confirmation")
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
 
-        <View style={styles.content}>
-          <View style={styles.form}>
-            <View style={styles.header}>
-              <Text style={styles.emoji}>
-                { isFilled ? '😄' : '😃'}
-          </Text>
-              <Text style={styles.title}> Como podemos{"\n"}
+          <View style={styles.content}>
+            <View style={styles.form}>
+              <View style={styles.header}>
+                <Text style={styles.emoji}>
+                  {isFilled ? '😄' : '😃'}
+                </Text>
+                <Text style={styles.title}> Como podemos{"\n"}
           chamar você?
           </Text>
-            </View>
+              </View>
 
-            <TextInput
-              style={[
-                styles.input,
-                (isFocused || isFilled) && { borderColor: colors.green }
-              ]}
-              placeholder="Digite seu nome"
-              onBlur={handleInputBlur}
-              onFocus={handleInputFocus}
-              onChangeText={handleInputChange}
-            />
-
-            <View style={styles.footer}>
-              <Button 
-              title="Confirmar"
-              onPress={navigateToConfimation} 
+              <TextInput
+                style={[
+                  styles.input,
+                  (isFocused || isFilled) && { borderColor: colors.green }
+                ]}
+                placeholder="Digite seu nome"
+                onBlur={handleInputBlur}
+                onFocus={handleInputFocus}
+                onChangeText={handleInputChange}
               />
 
+              <View style={styles.footer}>
+                <Button
+                  title="Confirmar"
+                  onPress={navigateToConfimation}
+                />
+
+              </View>
             </View>
           </View>
-        </View>
         </TouchableWithoutFeedback>
 
       </KeyboardAvoidingView>
