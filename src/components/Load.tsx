@@ -4,8 +4,7 @@ import LottieView from 'lottie-react-native';
 
 import loadAnimation from '../assets/load.json';
 
-const Load: React.FC = () => {
-
+export function Load() {
   return (
     <View style={styles.container}>
       <LottieView
@@ -17,8 +16,6 @@ const Load: React.FC = () => {
     </View>
   )
 }
-
-export default Load;
 
 const styles = StyleSheet.create({
   container: {

@@ -1,15 +1,15 @@
 import React from 'react';
-import { RectButton, RectButtonProps } from "react-native-gesture-handler"
-import { View, Text, StyleSheet } from 'react-native';
-import colors from '../../styles/colors';
-import fonts from '../../styles/fonts';
+import { StyleSheet, Text } from 'react-native';
+import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
+import colors from '../styles/colors';
+import fonts from '../styles/fonts';
 
-interface EnviromentButtonProps extends RectButtonProps {
-  title: string,
-  active?: boolean,
+interface EnvironmentButtonProps extends RectButtonProps {
+  title: string;
+  active?: boolean;
 }
 
-const EnvironmentButton: React.FC<EnviromentButtonProps> = ({ title, active = false, ...rest }) => {
+export function EnvironmentButton({ title, active = false, ...rest }: EnvironmentButtonProps) {
   return (
     <RectButton
       style={[
@@ -20,17 +20,13 @@ const EnvironmentButton: React.FC<EnviromentButtonProps> = ({ title, active = fa
     >
       <Text style={[
         styles.text,
-        active && styles.containerActive
-      ]}>
-        {title}
+        active && styles.textActive
+        ]}>
+        { title }
       </Text>
-
-
     </RectButton>
   )
 }
-
-export default EnvironmentButton;
 
 const styles = StyleSheet.create({
   container: {
@@ -38,23 +34,19 @@ const styles = StyleSheet.create({
     width: 76,
     height: 40,
     justifyContent: 'center',
-    alignItems: "center",
+    alignItems: 'center',
     borderRadius: 12,
-marginRight: 5,
+    marginHorizontal: 5
   },
   containerActive: {
-    fontFamily: fonts.heading,
-    color: colors.green,
-    backgroundColor: colors.green_light,
+    backgroundColor: colors.green_light
   },
-
   text: {
     color: colors.heading,
-    fontFamily: fonts.text,
+    fontFamily: fonts.text
   },
-
   textActive: {
     fontFamily: fonts.heading,
     color: colors.green_dark,
   }
-})
+});

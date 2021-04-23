@@ -1,69 +1,60 @@
 import React, { useEffect, useState } from 'react';
-import { getStatusBarHeight } from "react-native-iphone-x-helper"
-import { View, StyleSheet, Text, Image, } from 'react-native';
-
-import colors from '../../styles/colors';
-import fonts from '../../styles/fonts';
-
-import Logo from "../assets/Logo.jpeg";
+import { StyleSheet, View, Text, Image } from 'react-native';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const Header: React.FC = () => {
-  const [name, setNamme] = useState("");
+import userImg from '../assets/User.png';
+import colors from '../styles/colors';
+import fonts from '../styles/fonts';
+
+export function Header() {
+  const [userName, setUserName] = useState<string>();
 
   useEffect(() => {
     async function loadStorageUserName() {
-      const user = await AsyncStorage.getItem("@plantmanager:user")
-      setNamme(user || "")
+      const user = await AsyncStorage.getItem('@plantmanager:user');
+
+      setUserName(user || '');
     }
 
-    loadStorageUserName();
+    loadStorageUserName()
+  }, [userName])
 
-  }, [])
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.greenting}>Olá,</Text>
-        <Text style={styles.userName}>{name}</Text>
+        <Text style={styles.greeting}>Olá,</Text>
+        <Text style={styles.username}>{userName}</Text>
       </View>
 
-      <Image
-        style={styles.image}
-        source={Logo}
-      />
-
+      <Image source={userImg} style={styles.image} />
     </View>
   )
 }
 
-export default Header;
-
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
+    width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: "center",
+    alignItems: 'center',
     paddingVertical: 20,
     marginTop: getStatusBarHeight(),
   },
-
   image: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
+    width: 70,
+    height: 70,
+    borderRadius: 40
   },
-
-  greenting: {
+  greeting: {
     fontSize: 32,
     color: colors.heading,
-    fontFamily: fonts.text,
-
+    fontFamily: fonts.text
   },
-  userName: {
+  username: {
     fontSize: 32,
     fontFamily: fonts.heading,
     color: colors.heading,
-    lineHeight: 40,
-  }
-})
+    lineHeight: 40
+  },
+});
