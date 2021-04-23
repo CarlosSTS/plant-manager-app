@@ -15,7 +15,7 @@ const [userPhoto, setUserPhoto] = useState<string>();
       const image = await AsyncStorage.getItem('@plantmanager:image');
 
       setUserName(user || '');
-      setUserPhoto(image || "../assets/User.png")
+      setUserPhoto(image || "")
     }
 
     loadStorageUserName()
