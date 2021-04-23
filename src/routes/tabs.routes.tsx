@@ -16,8 +16,8 @@ const AuthRoutes: React.FC = () => {
         inactiveTintColor: colors.heading,
         labelPosition: 'beside-icon',
         style: {
-          paddingVertical: Platform.OS === 'ios' ? 20 : 0,
-          height: 60
+          paddingHorizontal: Platform.OS === 'ios' ? 20 : 0,
+          height: 80
         }
       }}
     >
