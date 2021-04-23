@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 
 import {
   TouchableWithoutFeedback,
@@ -10,7 +10,8 @@ import {
   TextInput,
   KeyboardAvoidingView,
   Platform,
-  Keyboard
+  Keyboard,
+  Alert
 } from 'react-native';
 import Button from "../components/Button"
 
@@ -34,6 +35,13 @@ function handleInputFocus() {
 function handleInputChange(value: string) {
   setIsFilled(!!value)
   setName(value)
+}
+
+function navigateToConfimation() {
+  if(!name) {
+    return Alert.alert("Aviso", 'Me diz como chamar você 🥲')
+  }
+navigate("Confirmation")
 }
 
   return (
@@ -69,7 +77,7 @@ function handleInputChange(value: string) {
             <View style={styles.footer}>
               <Button 
               title="Confirmar"
-              onPress={() => navigate('Confirmation')} 
+              onPress={navigateToConfimation} 
               />
 
             </View>
