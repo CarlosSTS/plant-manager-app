@@ -37,7 +37,7 @@ export function UserIdentification() {
     const { status } = await imagePicker.requestCameraPermissionsAsync();
 
     if (status !== "granted") {
-      return Alert.alert("Aviso", "Você pode Adicionar uam imagem 🥲")
+      return Alert.alert("Aviso", "Você não pode Adicionar uma imagem 🥲")
     }
     const result = await imagePicker.launchImageLibraryAsync({
       allowsEditing: true,
