@@ -2,7 +2,7 @@
 1. Aplcativo para ajudar a cuidar de suas plantas.
 2. O aplicativo trabalha com notificações,calendário e upload de imagens.
 3. Salva os dados como nome e foto de perfil no Storage do dispositivo.
-> Uso de fonts externas ([jost](https://fonts.google.com/specimen/Jost) do google fonts.
+> Uso de fonts externas [jost](https://fonts.google.com/specimen/Jost)) do google fonts.
 
 ## módulos
 
