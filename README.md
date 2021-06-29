@@ -16,12 +16,12 @@ O app contém os seguintes módulos
 
 ## Páginas do app
 ![Foto do App tela1](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
-![Foto do App tela2](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
-![Foto do App tela3](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
-![Foto do App tela4](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
-![Foto do App tela5](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
-![Foto do App tela6](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
-![Foto do App tela7](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
+![Foto do App tela2](https://github.com/CarlosSTS/NLW5/blob/master/images/screen2.png)
+![Foto do App tela3](https://github.com/CarlosSTS/NLW5/blob/master/images/screen3.png)
+![Foto do App tela4](https://github.com/CarlosSTS/NLW5/blob/master/images/screen4.png)
+![Foto do App tela5](https://github.com/CarlosSTS/NLW5/blob/master/images/screen5.png)
+![Foto do App tela6](https://github.com/CarlosSTS/NLW5/blob/master/images/screen6.png)
+![Foto do App tela7](https://github.com/CarlosSTS/NLW5/blob/master/images/screen7.png)
 
 ## MOBILE
 RODANDO O PROJETO MOBILE
