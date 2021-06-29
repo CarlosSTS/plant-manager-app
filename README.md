@@ -14,6 +14,9 @@ O app contém os seguintes módulos
 * Uma tela de dashboard com o perfil do usuário e todas as plantas cadastradas por gênero  
 * Uma tela de detalhe que trás os detalhes da planta selecionada e um picker para alterar o horário de regar a planta. 
 
+## Veja no LinkedIn
+* [Ir para o LinkedIn](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_milhaextra-reactnative-nlw5-activity-6791517217042264064-hzv6)
+
 ## Páginas do app
 ![Foto do App tela1](https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png)
 ![Foto do App tela2](https://github.com/CarlosSTS/NLW5/blob/master/images/screen2.png)
