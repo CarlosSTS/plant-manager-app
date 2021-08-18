@@ -31,7 +31,7 @@ RODANDO O PROJETO MOBILE
 * yarn install => para instalar Dependências do projeto
 * yarn start => para inicializar o projeto
 * yarn android => para executar o projeto no emulador android
-* yarn ios => Para executar no emulador iOS
+* yarn ios => para executar no emulador iOS
 * > lembre-se de trocar o IP pelo da sua rede no seguintes arquivos: api.js e instalar o [json-server](https://github.com/typicode/json-server)
 
 * > para instalar o json-server execute o seguinte comando: npm install -g json-server
