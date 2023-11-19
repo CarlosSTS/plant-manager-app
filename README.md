@@ -23,7 +23,7 @@ O app contém os seguintes módulos
 
 <table>
   <tr>
-<td><img src="https://github.com/CarlosSTS/nlw3/blob/master/assets/logo.png" alt="Foto do App logo" width="360" /></td>
+<td><img src="https://github.com/CarlosSTS/nlw3/blob/master/images/logo.png" alt="Foto do App logo" width="360" /></td>
 <td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png" alt="Foto do App tela1" width="360" /></td>
 <td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen2.png" alt="Foto do App tela2" width="360" /></td>
 </tr>
