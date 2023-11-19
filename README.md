@@ -41,6 +41,8 @@ O app contém os seguintes módulos
   <tr>
 <td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen6.png" alt="Foto do App tela6" width="360" /></td>
 <td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen7.png" alt="Foto do App tela7" width="360" /></td>
+<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen8.png" alt="Foto do App tela8" width="360" /></td>
+
 </tr>
 </table>
 
