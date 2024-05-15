@@ -23,25 +23,25 @@ O app contém os seguintes módulos
 
 <table>
   <tr>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/logo.png" alt="Foto do App logo" width="360" /></td>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen1.png" alt="Foto do App tela1" width="360" /></td>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen2.png" alt="Foto do App tela2" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Flogo.png?alt=media&token=2df699d6-1685-4eff-92cb-d18e6bf3f48e" alt="Foto do App logo" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen1.png?alt=media&token=8ee5c889-7c82-4dd9-b330-c194e66bf334" alt="Foto do App tela1" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen2.png?alt=media&token=34d5dbcb-eaf7-434d-b693-1638e056b50a" alt="Foto do App tela2" width="360" /></td>
 </tr>
 </table>
 
 <table>
   <tr>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen3.png" alt="Foto do App tela3" width="360" /></td>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen4.png" alt="Foto do App tela4" width="360" /></td>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen5.png" alt="Foto do App tela5" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen3.png?alt=media&token=fe674fff-d84e-4867-b485-d7a37c0ad405" alt="Foto do App tela3" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen4.png?alt=media&token=c8eceaa0-09f4-48ee-8749-c50d341af416" alt="Foto do App tela4" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen5.png?alt=media&token=2994dcc9-5005-4cf4-bf36-d43fbd7d2359" alt="Foto do App tela5" width="360" /></td>
 </tr>
 </table>
 
 <table>
   <tr>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen6.png" alt="Foto do App tela6" width="360" /></td>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen7.png" alt="Foto do App tela7" width="360" /></td>
-<td><img src="https://github.com/CarlosSTS/NLW5/blob/master/images/screen8.png" alt="Foto do App tela8" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen6.png?alt=media&token=b4112bc1-8812-46a7-8b77-54b62ff851dd" alt="Foto do App tela6" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen7.png?alt=media&token=637d99bf-e90b-4271-9d5c-493fda69ae28" alt="Foto do App tela7" width="360" /></td>
+<td><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-web-7fbff.appspot.com/o/github_projects%2Fplant-manager-app%2Fscreen8.png?alt=media&token=6045b861-ea3c-471f-ac30-05d17d7fd492" alt="Foto do App tela8" width="360" /></td>
 
 </tr>
 </table>
@@ -50,7 +50,7 @@ O app contém os seguintes módulos
 
 RODANDO O PROJETO MOBILE
 
-- yarn install => para instalar Dependências do projeto
+- yarn install => para instalar dependências do projeto
 - yarn start => para inicializar o projeto
 - yarn android => para executar o projeto no emulador android
 - yarn ios => para executar no emulador iOS
